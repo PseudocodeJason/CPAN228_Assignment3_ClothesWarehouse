@@ -1,4 +1,4 @@
-# CPAN228_Assignment2_ClothesWarehouse
+# CPAN228_Assignment3_ClothesWarehouse
 
 - Implement registration and security configuration for Clothes Warehouse (4%) # Done #
 - Create three user roles: admin, warehouse employee and regular user (1%)
