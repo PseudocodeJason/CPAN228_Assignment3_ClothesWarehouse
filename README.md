@@ -1,9 +1,9 @@
 # CPAN228_Assignment3_ClothesWarehouse
 
-- Implement registration and security configuration for Clothes Warehouse (4%) # Done #
+- Implement registration and security configuration for Clothes Warehouse (4%) # Done - Melody #
 - Create three user roles: admin, warehouse employee and regular user (1%)
 - Create clothes management page available only to admin role (2%)
-- Admin should be able to delete item from the list (1%) # Done #
+- Admin should be able to delete item from the list (1%) # Done - Melody#
 - Add item screen should be available only to admin and warehouse employee (1%)
 - Use bootstrap for styling of the admin page and create custom login screen (1%)
 
