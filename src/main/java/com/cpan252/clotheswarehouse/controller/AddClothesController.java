@@ -3,6 +3,8 @@ package com.cpan252.clotheswarehouse.controller;
 import java.util.EnumSet;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.access.prepost.PreAuthorize;
+import org.springframework.security.core.annotation.AuthenticationPrincipal;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.validation.BindingResult;
@@ -13,6 +15,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 
 import com.cpan252.clotheswarehouse.model.Cloth;
 import com.cpan252.clotheswarehouse.model.Cloth.Brand;
+import com.cpan252.clotheswarehouse.model.User;
 import com.cpan252.clotheswarehouse.repository.ClothRepository;
 
 import jakarta.validation.Valid;
@@ -54,5 +57,13 @@ public class AddClothesController {
         log.info("Processing cloth: {}", cloth);
         clothRepository.save(cloth);
         return "redirect:/clothlist";
+    }
+
+    @PostMapping("/deleteAllClothes")
+    @PreAuthorize("hasRole('ROLE_ADMIN')")
+    public String processClothesDeletion(@AuthenticationPrincipal User user) {
+        log.info("Deleting all clothes for user: {}", user.getAuthorities());
+        clothRepository.deleteAll();
+        return "redirect:/add";
     }
 }
