@@ -9,9 +9,29 @@
       integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
       crossorigin="anonymous"
     />
+    <style>
+      body{
+        align-items: center;
+        align-content: center;
+      }
+      div{
+        font-weight: bold;
+      }
+      .head{
+        border: 1px solid black;
+        width: 30%;
+        align-items: center;
+        align-content: center;
+        position: relative;
+        margin-left: 34%;
+        margin-top: 10%;
+        text-align: center;
+      }
+    </style>
   </head>
 
   <body>
+    <div class="head">
     <div
       class="d-flex flex-column bd-highlight justify-content-center align-items-center w-75 ms-5"
     >
@@ -19,6 +39,7 @@
 
       <!-- tag::thAction[] -->
       <form method="POST" th:action="@{/register}" id="registration">
+        <div class="mb-3">
         <!-- end::thAction[] -->
         <label class="form-label" for="username">Username: </label>
         <input
@@ -36,8 +57,10 @@
           id="password"
         /><br />
 
-        <input class="btn btn-primary mt-5" type="submit" value="Register" />
+        <input class="btn btn-primary" type="submit" value="Register" />
       </form>
+      </div>
+    </div>
     </div>
   </body>
 </html>

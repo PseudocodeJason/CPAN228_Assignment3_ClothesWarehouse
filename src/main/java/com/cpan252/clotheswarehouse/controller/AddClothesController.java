@@ -47,7 +47,7 @@ public class AddClothesController {
         return Cloth
                 .builder()
                 .build();
-    }
+    } 
 
     @PostMapping
     public String processClothAddition(@Valid Cloth cloth, BindingResult result) {
