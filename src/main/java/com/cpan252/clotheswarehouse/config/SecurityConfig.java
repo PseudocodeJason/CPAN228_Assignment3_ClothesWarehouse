@@ -39,13 +39,20 @@ public class SecurityConfig {
         return http
                 .authorizeHttpRequests()
                 .requestMatchers(toH2Console()).permitAll()
-                .requestMatchers( "/add","/clothlist")
+                //Only allows Users withe the role ADMIN to acess these pages urls
+                .requestMatchers("")
+                .hasRole("ADMIN")
+                //Only allows Users with the role EMPLOYEE to access these pages urls
+                .requestMatchers( "/add")
+                .hasRole("EMPLOYEE")
+                //Allows people with the role USER to these pages urls
+                .requestMatchers("/clothlist")
                 .hasRole("USER")
                 .anyRequest().permitAll()
                 .and()
                 .formLogin()
                 .loginPage("/login")
-                .defaultSuccessUrl("/add", true)
+                .defaultSuccessUrl("/clothlist", true)
                 .and()
                 .logout()
                 .logoutSuccessUrl("/")
