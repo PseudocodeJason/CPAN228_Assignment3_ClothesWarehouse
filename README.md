@@ -19,3 +19,5 @@ Click here to register.
 * If you register as "admin" and login as "admin" -> you can create clothes and delete the clothes 
 * If you register not as "admin" and login not as "admin" -> you can create clothes but can not delete the clothes (Access Denied)
 
+if you want to register as employee, The username need to contact empl. For example: emplJason, emplMelody
+if you want to register as admin, The username need to be admin. 
