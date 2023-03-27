@@ -42,6 +42,9 @@ public class SecurityConfig {
                 //Only allows Users withe the role ADMIN to acess these pages urls
                 .requestMatchers("")
                 .hasRole("ADMIN")
+                //Only allows Users withe the role ADMIN to access the clothes management page URL
+                .requestMatchers("/clothesManagment")
+                .hasRole("ADMIN")
                 //Only allows Users with the role EMPLOYEE to access these pages urls
                 .requestMatchers( "/add")
                 .hasRole("EMPLOYEE")
