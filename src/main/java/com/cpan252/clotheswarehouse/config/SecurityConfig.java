@@ -39,11 +39,8 @@ public class SecurityConfig {
         return http
                 .authorizeHttpRequests()
                 .requestMatchers(toH2Console()).permitAll()
-                //Only allows Users withe the role ADMIN to acess these pages urls
-                .requestMatchers("")
-                .hasRole("ADMIN")
-                //Only allows Users withe the role ADMIN to access the clothes management page URL
-                .requestMatchers("/clothesManagment")
+                //Only allows Users withe the role ADMIN to access these pages urls
+                .requestMatchers("/admin")
                 .hasRole("ADMIN")
                 //Only allows Users with the role EMPLOYEE to access these pages urls
                 .requestMatchers( "/add")
