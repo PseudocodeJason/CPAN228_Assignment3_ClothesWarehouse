@@ -6,6 +6,33 @@
 - Admin should be able to delete item from the list (1%) 
 - Add item screen should be available only to admin and warehouse employee (1%) 
 - Use bootstrap for styling of the admin page and create custom login screen (1%)
+=======================================================================================
+
+- Implement registration and security configuration for Clothes Warehouse (4%) 
+![image](https://user-images.githubusercontent.com/32995324/228923052-0a2f6bc9-e4ab-474f-9859-3bab357e85f6.png)
+
+- Create three user roles: admin, warehouse employee and regular user (1%)
+![image](https://user-images.githubusercontent.com/32995324/228923120-c3a26794-4041-4e69-bafe-49647c2c1064.png)
+
+
+- Create clothes management page available only to admin role (2%)
+![image](https://user-images.githubusercontent.com/32995324/228923668-1c0d5b2e-0e7f-4383-b5c9-3f320b4df7df.png)
+
+
+- Admin should be able to delete item from the list (1%) 
+![image](https://user-images.githubusercontent.com/32995324/228923219-bbd0a283-92d9-46a4-9bc3-3f17bd054fb4.png)
+
+
+- Add item screen should be available only to admin and warehouse employee (1%) 
+![image](https://user-images.githubusercontent.com/32995324/228923705-6f341617-018c-4aaf-a5ce-45974d2b122e.png)
+
+
+- Use bootstrap for styling of the admin page and create custom login screen (1%)
+![image](https://user-images.githubusercontent.com/32995324/228923886-362e5e00-3d2b-436f-a246-7ab760bbf11a.png)
+
+
+=======================================================================================
+
 
 
 Home Page: http://localhost:8080/
