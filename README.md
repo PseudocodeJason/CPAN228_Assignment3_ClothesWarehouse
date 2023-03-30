@@ -60,14 +60,18 @@ As employee, you can not access to the clothes management page
 ![image](https://user-images.githubusercontent.com/32995324/228917997-ea07ca41-281a-4979-9a15-436d9f9e3935.png)
 
 If you login as regular user, you can only visit the clothlist
+
 ![image](https://user-images.githubusercontent.com/32995324/228918488-784db9cc-81be-431d-80af-7b4e840821f6.png)
 
 clothlist:
+
 ![image](https://user-images.githubusercontent.com/32995324/228918344-748eb85e-fa43-41c3-9f8f-25a3565a26b9.png)
 
 clothes management page:
+
 ![image](https://user-images.githubusercontent.com/32995324/228918411-3e240858-93d5-4c18-8704-d53b6edd9228.png)
 
 Add cloth page:
+
 ![image](https://user-images.githubusercontent.com/32995324/228918373-d6119d4e-c7c6-4b80-8af5-b22de2865ee0.png)
 
