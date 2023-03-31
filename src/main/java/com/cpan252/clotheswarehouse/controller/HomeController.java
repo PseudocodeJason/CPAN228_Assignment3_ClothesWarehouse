@@ -10,3 +10,5 @@ public class HomeController {
         return "home";
     }
 }
+
+// ROOT route renders the home html page
