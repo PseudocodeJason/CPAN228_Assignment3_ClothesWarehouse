@@ -20,6 +20,9 @@ import com.cpan252.clotheswarehouse.model.dto.ClothSearchByDateDto;
 import com.cpan252.clotheswarehouse.repository.ClothRepository;
 import com.cpan252.clotheswarehouse.repository.ClothRepositoryPaginated;
 
+
+// Controller for the clothlist.html page 
+
 @Controller
 @RequestMapping("/clothlist")
 public class ClothListController {

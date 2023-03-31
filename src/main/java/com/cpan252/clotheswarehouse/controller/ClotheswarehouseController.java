@@ -11,3 +11,4 @@ public class ClotheswarehouseController {
         return "home";
     }
 }
+// home route 
